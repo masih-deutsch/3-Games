@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body class="flex flex-col w-100 pt-10 mx-auto items-center justify-center gap-10 bg-gray-200">
+
+    <fieldset class="game1 border-2 p-4 flex flex-col gap-1 bg-white shadow-2xl rounded-lg w-115">
+        <legend class="font-bold text-3xl">Rock Paper Scissors</legend>
+        <div class="flex gap-3 mx-auto">
+            <p><i class="fa-solid fa-hand-back-fist"></i></p>
+            <p><i class="fa-solid fa-hand-scissors"></i></p>
+            <p><i class="fa-solid fa-hand"></i></p>
+        </div>
+        <div class="flex gap-3 mx-auto">
+            <input type="radio" name="rad" value="rock">
+            <input type="radio" name="rad" value="scissors">
+            <input type="radio" name="rad" value="paper">
+        </div>
+        <button
+            class="border py-1 px-2 w-26 mx-auto mt-5 hover:bg-black hover:text-white transition-colors duration-500 rounded-lg">Good
+            Luck!</button>
+        <input class="ml-3 border rounded-lg p-2 mt-4 w-100 text-center focus:outline-black" type="text" readonly>
+    </fieldset>
+
+    <fieldset class="game2 border-2 p-4 bg-white shadow-2xl rounded-lg">
+        <legend class=" font-bold text-3xl">Pig Latin Translator</legend>
+        <div class="flex gap-5">
+            <div>
+                <p>Enter a Word or a Sentence</p>
+                <textarea
+                    class="textInput border-1 border-gray-400 p-2 rounded-lg text-center focus:outline-black"></textarea>
+            </div>
+            <div>
+                <p>Result</p>
+                <textarea class="textOutput border-1 border-gray-400 p-2 rounded-lg text-center focus:outline-black"
+                    readonly></textarea>
+            </div>
+        </div>
+        <button
+            class="border py-1 px-2 hover:bg-black hover:text-white transition-colors duration-500 rounded-lg">Translate!</button>
+    </fieldset>
+
+    <fieldset class="game3 border-2 p-4 bg-white shadow-2xl rounded-lg">
+        <legend class=" font-bold text-3xl">Caesar Cipher</legend>
+        <div class="flex gap-5">
+            <div>
+                <p>Enter a Word or a Sentence</p>
+                <textarea
+                    class="textInput border-1 border-gray-400 p-2 rounded-lg text-center focus:outline-black"></textarea>
+            </div>
+            <div>
+                <p>Result</p>
+                <textarea class="textOutput border-1 border-gray-400 p-2 rounded-lg text-center focus:outline-black"
+                    readonly></textarea>
+            </div>
+        </div>
+        <div class="grid grid-cols-2">
+            <div>
+                <span>Shift:</span>
+                <input class="border-1 border-gray-400 w-10 rounded-lg text-center focus:outline-black" type="text">
+            </div>
+
+            <button
+                class="border py-1 px-2 w-20 ml-15 hover:bg-black hover:text-white transition-colors duration-500 rounded-lg">Code
+                it!</button>
+        </div>
+
+    </fieldset>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
